@@ -1,0 +1,136 @@
+:root {
+  --main-bg-color: #131518;
+  --card-bg-color: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  --submit-bg-color: #fc7614;
+  --number-bg-color: #fc7614;
+  --submit--bg--active: #ffffff;
+  --star-bg-color: #262e38;
+  --numbers-text-color: #7c8798;
+
+  --main-text-color: #969fad;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Overpass", sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: var(--submit--bg--active);
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 2.1875rem;
+  padding: 0;
+  margin: 0;
+}
+
+.text {
+  color: var(--main-text-color);
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  max-width: 20.4375rem;
+  height: auto;
+  border-radius: 1.875rem;
+  padding: 1.5rem;
+}
+
+.star {
+  background-color: var(--star-bg-color);
+  border-radius: 50%;
+  padding: 0.8331rem;
+  margin-bottom: 1rem;
+}
+
+.text {
+  margin-top: 17px;
+  margin-bottom: 24px;
+}
+
+.numbers-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.a {
+  display: inline-block;
+  padding: 0.5625rem 1.125rem;
+  margin: auto;
+  margin-right: 1.125rem;
+  background-color: var(--star-bg-color);
+  border-radius: 50%;
+  color: var(--numbers-text-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn {
+  display: block;
+  padding: 0.75rem 6.75rem;
+  background-color: var(--submit-bg-color);
+  border-radius: 1.4063rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1200px) {
+  .card {
+    max-width: 25.75rem;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    line-height: 2.1875rem;
+    margin-bottom: 0.4375rem;
+  }
+
+  .text {
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .card {
+    padding: 32px;
+  }
+
+  .star {
+    margin-bottom: 1.875rem;
+    padding: 1rem;
+  }
+
+  .a {
+    padding: 0.8125rem 1.375rem;
+  }
+
+  .numbers-wrapper {
+    margin-bottom: 2rem;
+  }
+}
