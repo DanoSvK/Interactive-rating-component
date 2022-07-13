@@ -87,6 +87,11 @@ h1 {
   cursor: pointer;
 }
 
+.number:hover {
+  background-color: var(--numbers-text-color);
+  color: #ffffff;
+}
+
 .number-active {
   background-color: var(--number-bg-color);
   color: #ffffff;
@@ -104,6 +109,11 @@ h1 {
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 2rem;
+}
+
+.btn:hover {
+  background-color: var(--submit--bg--active);
+  color: var(--submit-bg-color);
 }
 
 .btn-active {
