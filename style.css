@@ -44,7 +44,8 @@ h1 {
   margin: 0;
 }
 
-.card {
+/* Feedback card */
+.feedback-card {
   background: radial-gradient(
     98.96% 98.96% at 50% 0%,
     #232a34 0%,
@@ -53,7 +54,7 @@ h1 {
   max-width: 20.4375rem;
   height: auto;
   border-radius: 1.875rem;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 2rem;
 }
 
 .star {
@@ -64,17 +65,17 @@ h1 {
 }
 
 .text {
-  margin-top: 17px;
-  margin-bottom: 24px;
+  margin-top: 1.0625rem;
+  margin-bottom: 1.5rem;
 }
 
 .numbers-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
-.a {
+.number {
   display: inline-block;
   padding: 0.5625rem 1.125rem;
   margin: auto;
@@ -86,10 +87,16 @@ h1 {
   cursor: pointer;
 }
 
+.number-active {
+  background-color: var(--number-bg-color);
+  color: #ffffff;
+}
+
 .btn {
   display: block;
   padding: 0.75rem 6.75rem;
-  background-color: var(--submit-bg-color);
+  background-color: var(--star-bg-color);
+  cursor: default;
   border-radius: 1.4063rem;
   text-align: center;
   margin-top: 1.5rem;
@@ -99,8 +106,64 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.btn-active {
+  display: block;
+  padding: 0.75rem 6.75rem;
+  background-color: var(--submit-bg-color);
+  border-radius: 1.4063rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Thank you card */
+.thanks-card {
+  display: none;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  max-width: 20.4375rem;
+  height: auto;
+  border-radius: 1.875rem;
+  padding: 2.125rem 1.5rem 2.3125rem;
+}
+
+.illustration {
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
+.selected {
+  text-align: center;
+  padding: 0.3125rem 0.75rem;
+  color: var(--number-bg-color);
+  background-color: var(--star-bg-color);
+  margin-bottom: 1.5rem;
+  border-radius: 1.4063rem;
+}
+
+.thanks-header {
+  text-align: center;
+}
+
+.thanks-text {
+  text-align: center;
+  color: var(--main-text-color);
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  margin-top: 1.0625rem;
+  margin-bottom: 1.5rem;
+}
+
 @media (min-width: 1200px) {
-  .card {
+  /* Feedback card */
+  .feedback-card {
     max-width: 25.75rem;
     height: auto;
   }
@@ -126,11 +189,17 @@ h1 {
     padding: 1rem;
   }
 
-  .a {
+  .number {
     padding: 0.8125rem 1.375rem;
   }
 
   .numbers-wrapper {
     margin-bottom: 2rem;
+  }
+
+  /* Thank you card */
+  .thanks-card {
+    max-width: 25.75rem;
+    padding: 2.8125rem 2rem 2.8125rem;
   }
 }
