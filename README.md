@@ -13,7 +13,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](.screenshot.jpg)
+![](https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/hxx2bhmtmeelt0a98zos.jpg)
 
 ### Links
 
